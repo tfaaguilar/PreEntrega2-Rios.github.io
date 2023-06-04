@@ -1,0 +1,332 @@
+/* reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*reset*/
+
+/*fuente*/
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/*fuente*/
+
+/* hide tittles*/
+
+.hidden {
+display: none;
+}
+
+/*tamaños*/
+
+#logo {
+    width: 10%;
+    display: inline;
+}
+
+#yellow {
+    height: 20px;
+    width: 1350px;
+    background-color: #FFCD00;
+}
+
+#blue {
+    height: 10px;
+    width: 1350px;
+    background-color: #003087;
+}
+
+#red {
+    height: 10px;
+    width: 1350px;
+    background-color: #C8102E;
+}
+
+/*quitar subrayado*/
+
+a { 
+    text-decoration: none;
+    color: rgb(104, 47, 10);
+}
+
+/*ver en linea header y logo*/
+
+ul li {
+    display: inline;
+    padding: 30px;
+}
+
+#header_nav { 
+    margin-top: -30px;
+    margin-left: 350px;
+    margin-bottom: 3px;
+}
+
+#hero {
+    position: relative;
+    
+}
+
+#button1 {
+    margin-top: -100px;
+    margin-bottom: 100px;
+    margin-left: 600px;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+#features   {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 110px;
+}
+
+#features p {
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: 22px;
+}
+
+#plantation {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+#textplant {
+    margin-top: -400px;
+    margin-left: 750px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+#button2 {
+    margin-left: 900px;
+    margin-bottom: 1000px;
+    background-color: rgb(90, 39, 6);
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 100px;
+}
+
+footer img {
+    margin-top: 30px;
+    width: 10%;
+    margin-left: 600px;
+}
+
+footer h2 {
+    display: inline;
+    margin-left: 20px;
+}
+
+#footernav {
+    padding: 10px;
+    margin-left: 250px;
+    margin-top: 40px;
+   
+}
+
+
+/* About us*/
+
+
+
+#jardin {
+    margin-top: 50px;
+    margin-left: 700px;
+}
+
+#textabout1 {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#textabout2 {
+    margin-top: 150px;
+    margin-left: 90px;
+    margin-right: 700px;
+    position: absolute;
+}
+
+#map {
+    margin-left: 50px;
+}
+
+#info {
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -350px;
+}
+
+/*contact*/
+
+#textcontact {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+#contact {
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+#form {
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: -460px;
+    margin-left: 600px;
+    margin-right: 200px;
+    padding: 20px;
+    font-size: 22px;
+    position: absolute;
+    
+}
+
+#form textarea {
+    height: 80px;
+    width: 500px;
+}
+
+/*Store*/
+
+#products1 {
+    display: flex;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#products1 section {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#products2 {
+    display: flex;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#products2 section {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#button3 {
+    margin-left: 600px;
+    background-color: rgb(90, 39, 6);
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+    
+}
+
+#button4 {
+    position: absolute;
+    background-color: rgb(170, 111, 72);
+    border-radius: 40px;
+    padding: 8px;
+    color: white;
+    margin-left: -60px;
+}
+
+#images1 {
+    display: flex;
+    text-align: center;
+}
+
+#images1 section {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+#images2 {
+    display: flex;
+    text-align: center;
+}
+
+#images2 section {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+#images3 {
+    display: flex;
+    text-align: center;
+}
+
+#images3 section {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*pagina terms*/
+
+#terms p {
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+    
+
