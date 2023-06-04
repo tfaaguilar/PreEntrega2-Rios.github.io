@@ -1,6 +1,6 @@
 READ ME
 
-se usa el main2.css para esta entrega, se seleccionaron las paginas store y gallery para diseño resposive, uso de bootstrap y grids.
+se usa el main2.css para esta entrega, se seleccionaron las paginas store y gallery para diseño responsive, uso de bootstrap y grids.
 
 Se crearon dos css debido a que: 
 
