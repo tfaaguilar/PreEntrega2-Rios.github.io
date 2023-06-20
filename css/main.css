@@ -1,5 +1,5 @@
-/* reset */
 
+/*reset*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,288 +45,656 @@ table {
 	border-spacing: 0;
 }
 
-/*reset*/
+
+
+/*tamaños*/
+
+.hidden {
+    display: none;
+}
+
+/* mobile first :)---------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*header*/
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
 /*fuente*/
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 30px;
-    text-align: justify;
+    font-size: 20px;    
 }
 
-/*fuente*/
-
-/* hide tittles*/
-
-.hidden {
-display: none;
+.logo {
+    margin-top: 5px;
+    margin-left: 240px;
+    position: absolute;
+    width: 100px;
 }
 
-/*tamaños*/
-
-#logo {
-    width: 10%;
-    display: inline;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-column-gap: 10px;
 }
-
-#yellow {
-    height: 20px;
-    width: 1350px;
-    background-color: #FFCD00;
-}
-
-#blue {
-    height: 10px;
-    width: 1350px;
-    background-color: #003087;
-}
-
-#red {
-    height: 10px;
-    width: 1350px;
-    background-color: #C8102E;
-}
-
-/*quitar subrayado*/
 
 a { 
     text-decoration: none;
     color: rgb(104, 47, 10);
 }
 
-/*ver en linea header y logo*/
-
-ul li {
-    display: inline;
-    padding: 30px;
+.header_nav {
+    grid-column: 1/-1
 }
 
-#header_nav { 
-    margin-top: -30px;
-    margin-left: 350px;
-    margin-bottom: 3px;
+.header_nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
-#hero {
-    position: relative;
+.header_nav input, .burger-con {
+    display: none;
+}
+
+.header_nav input:checked ~ .burger-con {
+    display: block;
+}
+
+.header_nav input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+.header_nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.header_nav ul li a {
+    display: block;
+    /* trbl */
+   /* padding: 10px 0 10px 0px;*/
+    text-align: left;
+   
+    color: rgb(90, 39, 6);
+}
+
+
+.header_nav ul li:last-child {
+    margin-bottom: 10px;
+}
+
+ /*flag*/
+
+.flag hr {
+    margin: 0px;
+    border: none;
+    opacity: 1;
+    width: 360px;
+}
+
+.yellow {
+    height: 20px;
+    background-color: #FFCD00;
+    border: none;
     
 }
+.blue {
+    height: 10px;
+    background-color: #003087;
+    border: none;
+}
+.red {
+    height: 10px;
+    background-color: #C8102E;
+    border: none;
+}
 
-#button1 {
-    margin-top: -100px;
-    margin-bottom: 100px;
-    margin-left: 600px;
+/*main*/
+
+.hero {
+    width: 360px;
+}
+
+.button1 {
+    background-color: #e9d1d1;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 130px;
+    margin-top: 30px;
     position: absolute;
-    background-color: aliceblue;
-    border-radius: 40px;
+}
+
+
+
+.feature1 {
+    grid-column: 1/4;
+}
+
+.feature2 {
+    grid-column: 1/4;
+}
+
+.feature3 {
+    grid-column: 1/4;
+}
+
+.features {
+    margin-top: 40px;
     padding: 20px;
 }
 
-#features   {
-    margin-top: 50px;
-    display: flex;
-    margin-left: 110px;
+.features p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
-#features p {
-    margin-left: 20px;
-    margin-right: 100px;
-    font-size: 22px;
+.feature1,
+.feature2,
+.feature3 {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#plantation {
-    margin-top: 50px;
-    margin-left: 70px;
+
+
+.plantation img {
+    grid-column: 1/4;
+    width: 360px;
+    margin-left: 0px;
 }
 
-#textplant {
-    margin-top: -400px;
-    margin-left: 750px;
-    margin-right: 150px;
-    margin-bottom: 50px;
+.plantation p {
+    text-align: justify;
+    grid-column: 1/-1;
+    margin-top: 30px;
+    padding: 10px;
 }
 
-#button2 {
-    margin-left: 900px;
-    margin-bottom: 1000px;
+.button2 {
+    background-color: #e9d1d1;
+    border-radius: 20px;
+    padding: 10px;
+    grid-column: 2/4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.textabout1 {
+    grid-column: 1/-1;
+    padding: 20px;
+}
+
+.textabout1 h2 {
+    text-align: center;
+}
+
+.textabout2 {
+    grid-column: 1/4;
+}
+
+.textabout2 p {
+    margin-left: 80px;
+    
+    margin-top: 20px;
+    
+    
+}
+
+.textabout2 img {
+    width: 360px;
+}
+
+.map {
+    margin-top: 20px;
+    grid-column: 1/4;
+    width: 360px;
+}
+
+.info {
+    grid-column: 1/4;
+    padding: 20px;
+}
+
+
+/*-------------*/
+
+.product1 {
+    grid-column: 1/4; 
+    margin-top: 10px;
+}
+
+.product2 {
+    grid-column: 1/4;
+}
+
+.product3 {
+    grid-column: 1/4;
+}
+
+.products section {
+    margin-top: 30px;   
+}
+
+.product1,
+.product2,
+.product3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.products p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button3 {
     background-color: rgb(90, 39, 6);
     border-radius: 40px;
     padding: 20px;
     color: white;
-}
-
-/*footer*/
-
-footer {
-    margin-top: 100px;
-}
-
-footer img {
+    margin-left: 100px;
+    grid-column: 1/4;
+    text-align: center;
     margin-top: 30px;
-    width: 10%;
-    margin-left: 600px;
+    margin-bottom: 30px;
 }
 
-footer h2 {
-    display: inline;
-    margin-left: 20px;
+.button4 {
+    background-color: rgba(165, 144, 144, 0.767);
+    border-radius: 10px ;
+    padding: 5px;
 }
 
-#footernav {
+
+.media{
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+
+.media img {
+    margin-left: 30px;
+}
+
+.media h2 {
+    text-align: center;
+}
+
+#carouselExample p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.textcontact1 {
+    grid-column: 1/-1;
     padding: 10px;
-    margin-left: 250px;
-    margin-top: 40px;
+}
+
+.textcontact1 img {
+    width: 340px;
+    margin-top: 20px;
+    
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 360px;
+    padding: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.formulario textarea {
+    height: 80px;
+    width: 300px;
+}
+
+.footernav {
+    grid-column: 1/-1; 
+    margin-top: 5px;
+}
+
+.footernav ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+.media h2 {
+    margin-left: 65px;
    
 }
 
 
-/* About us*/
+/*desktop---------------------------------------------------------------------------------------------------------*/
+    
+@media screen and (min-width: 768px)
 
+{
+   
+/*fuente*/
 
-
-#jardin {
-    margin-top: 50px;
-    margin-left: 700px;
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    
 }
 
-#textabout1 {
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+/*header*/
+
+.logo {
+    position: relative;
+    display: inline;
+    margin-top: 5px;
+    margin-left: 5px;
+
 }
 
-#textabout2 {
-    margin-top: 150px;
-    margin-left: 90px;
-    margin-right: 700px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 85px);
+    grid-column-gap: 30px;
+    
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(104, 47, 10);
+}
+
+   .burger-con {
+      display: flex;
+      font-size: 30px;
+      margin-left: 300px ;
+      margin-top: -50px;
+      text-decoration: none;
+   }
+
+   .burger-con ul {
+      display: flex;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      
+   }
+
+   .burger-con li {
+      margin-right: 10px;
+      padding-right: 80px;
+   } 
+
+.header_nav label  {
+    display: none;
+}
+
+.header_nav input {
+    display: none;
+}
+
+
+/*flag*/
+
+.flag hr {
+    margin: 0px;
+    border: none;
+    width: 1349px;
+    opacity: 1;
+}
+
+.yellow {
+    height: 20px;
+    background-color: #FFCD00;
+    border: none;
+    
+}
+.blue {
+    height: 10px;
+    background-color: #003087;
+    border: none;
+}
+.red {
+    height: 10px;
+    background-color: #C8102E;
+    border: none;
+}
+
+/*main*/
+
+.button1 {
+    background-color: #e9d1d1;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 600px;
+    margin-top: 200px;
     position: absolute;
 }
 
-#map {
-    margin-left: 50px;
+.feature1 {
+    grid-column: 1/3;
 }
 
-#info {
-    position: absolute;
-    margin-left: 800px;
-    margin-top: -350px;
+.feature2 {
+    grid-column: 5/7;
 }
 
-/*contact*/
+.feature3 {
+    grid-column: 9/11;
+}
 
-#textcontact {
+.features {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.features p {
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 100px;
+    margin-bottom: 0px;
+    margin-right: 0px;
 }
 
-#contact {
-    margin-top: 50px;
-    margin-left: 50px;
-    
+.feature1,
+.feature2,
+.feature3 {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#form {
-    display: flex;
-    background-color: antiquewhite;
-    margin-top: -460px;
-    margin-left: 600px;
-    margin-right: 200px;
-    padding: 20px;
-    font-size: 22px;
-    position: absolute;
-    
+.plantation {
+    margin-top: 30px;
 }
 
-#form textarea {
-    height: 80px;
-    width: 500px;
+.plantation img {
+    grid-column: 2/5;
+    width: 600px;
 }
 
-/*Store*/
-
-#products1 {
-    display: flex;
-    margin-left: 50px;
-    text-align: center;
+.plantation p {
+    text-align: justify;
+    grid-column: 8/12;
+    margin-top: 1px;
 }
 
-#products1 section {
-    margin-left: 50px;
-    margin-top: 50px;
+.button2 {
+    background-color: #e9d1d1;
+    border-radius: 20px;
+    padding: 10px;
+    grid-column: 8/11;
+    margin-top: 0px;
     margin-bottom: 50px;
-}
-
-#products2 {
-    display: flex;
-    margin-left: 50px;
+    margin-left: 80px;
     text-align: center;
 }
 
-#products2 section {
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.textabout1 {
+    grid-column: 2/12;
+    padding: 20px;
+    text-align: justify;
 }
 
-#button3 {
-    margin-left: 600px;
+.textabout1 h2 {
+    text-align: center;
+}
+
+.textabout2 {
+    grid-column: 2/12;
+    padding: 20px;
+}
+
+.textabout2 img {
+    margin-left: 200px;
+    width: 600px;
+}
+
+.map {
+    padding: 20px;
+    grid-column: 5/8;
+}
+
+.info {
+    grid-column: 4/10;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+#carouselExample{
+    width: 800px; /* Ancho personalizado */
+    height: 600px; /* Alto personalizado */
+    margin: 0 auto; /* Establece márgenes automáticos horizontalmente */
+    margin-top: 10px;
+      
+  }
+
+#carouselExample p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hero   {
+    width: 1349px;
+}
+
+
+
+/*---------------*/
+.product1 {
+    grid-column: 1/3; 
+    
+}
+
+.product2 {
+    grid-column: 5/7;
+}
+
+.product3 {
+    grid-column: 9/11;
+}
+
+.products section {
+    margin-top: 30px;
+   margin-left: 50px;
+}
+
+
+.product1,
+.product2,
+.product3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button3 {
     background-color: rgb(90, 39, 6);
     border-radius: 40px;
+    padding: 10px;
+    color: white;
+    margin-left: 0px;
+    grid-column: 5/9;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button4 {
+    background-color: rgba(165, 144, 144, 0.767);
+    border-radius: 10px ;
+    padding: 5px;
+}
+
+.textcontact1 {
+    grid-column: 2/12;
     padding: 20px;
-    color: white;
-    
 }
 
-#button4 {
+.textcontact1 img {
+    width: 600px;
     position: absolute;
-    background-color: rgb(170, 111, 72);
-    border-radius: 40px;
-    padding: 8px;
-    color: white;
-    margin-left: -60px;
-}
-
-#images1 {
-    display: flex;
-    text-align: center;
-}
-
-#images1 section {
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-#images2 {
-    display: flex;
-    text-align: center;
-}
-
-#images2 section {
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-#images3 {
-    display: flex;
-    text-align: center;
-}
-
-#images3 section {
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-/*pagina terms*/
-
-#terms p {
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: center;
-}
-
-
     
+   
+}
 
+.formulario {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 22px;
+    margin-left: 800px;
+    
+    grid-column: 8/10;
+}
+
+.formulario textarea {
+    height: 80px;
+    width: 360px;
+}
+
+.media{
+    grid-column: 6/8;
+    margin-top: 20px;
+}
+
+.media h2 {
+    text-align: center;
+    margin-right: 90px;
+}
+
+.footernav {
+    grid-column: 4/11; 
+    margin-top: 50px;
+}
+
+.footernav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+}

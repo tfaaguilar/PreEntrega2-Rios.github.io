@@ -11,47 +11,55 @@
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./Images/coffee_logo.jpg" type="image/x-icon">
 </head>
+
 <body>
-    <header>
+    <header class="grid-container">
         <h1 class="hidden">welcome</h1>
+
         <div>
-            <img src="./Images/coffee_logo.jpg" alt="Coffee_Logo" id="logo">
+            <img src="./Images/coffee_logo.jpg" alt="Coffee_Logo" class="logo">
         </div>
 
-        <nav id="header_nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">About us</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav  class="header_nav">
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger">
+                <img src="Images/burger.jpeg" alt="hamburger menu icon">
+            </label>
+            <div class="burger-con">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
             </ul>
-
+        </div>
         </nav>
-        <div id="yellow"></div>
-        <div id="blue"></div>
-        <div id="red"></div>
     </header>
 
-    <Main>
-        <div>
-            <img src="./Images/contacthero.jpg" alt="contacthero" id="hero">
-            <a href="Store.html" id="button1" class="boton1">Go to Store</a>
+    <div class="flag">
+        <hr class="yellow">
+        <hr class="blue">
+        <hr class="red">
+    </div>
+
+    <main>
+        <div class="grid-container">
+            <img src="./Images/contacthero.jpg" alt="contacthero" class="hero">
+            <a href="Store.html" class="button1">Go to Store</a>
         </div>
 
-        <div id="textcontact">
-            <h2>Contact us</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, odit, nihil repellat dicta pariatur reprehenderit quasi reiciendis corporis id culpa eligendi voluptatem dolores odio, nisi sapiente quidem! Maiores minima assumenda sed error reprehenderit officiis est autem. Facere odit numquam sequi iste, eligendi voluptatibus dolores facilis. Voluptatibus nihil saepe impedit laborum?</p>
-        </div>  
-
-        <div>
-            <img src="./Images/contact.jpg" alt="contact" id="contact">
+        <div class="textcontact grid-container">
+            <h2 class="hidden">Contact us</h2>
+            <section class="textcontact1">
+            <p>Feel free to reach out to our team through the contact information provided below. We are here to assist you with any questions, requests, or potential partnerships you may have. <br>  <br> Don't hesitate to contact us - we're excited to hear from you and eager to help you in any way we can.</p>
+            <img src="./Images/contact.jpg" alt="contact">
+            </section>
         </div>
 
         <!--insertar mensaje gracias-->
 
-        <section id="form">
+        <section class="formulario grid-container">
             <article>
                 <form action="Index.html"> 
                     <h2>Contact Form</h2>
@@ -86,7 +94,7 @@
                         <option value="buy">Buy our coffee</option>
                         <option value="costumer">Costumer service</option>
                     </select>
-                    <div>Do you accept our privacy policy?
+                    <div>Accept our privacy policy
                     <input type="checkbox" name="accept" value="1"></div>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Clear">
@@ -94,18 +102,21 @@
             </article>
         </section>
 
-    </Main>
+    </main>
 
-    <footer>
-        <div id="yellow"></div>
-        <div id="blue"></div>
-        <div id="red"></div>
-        <div>
+    <div class="flag">
+        <hr class="yellow">
+        <hr class="blue">
+        <hr class="red">
+    </div>
+
+    <footer class="grid-container">
+        <div class="media">
            <a href="https://www.facebook.com/" target="_blank"> <img src="./Images/Media.jpg" alt="Media"> </a>
            <h2>Follow us</h2>
         </div>
 
-        <div id="footernav">
+        <div class="footernav">
         <ul>
             <li><a href="terms.html" target="_blank">Privacy</a></li>
             <li><a href="terms.html" target="_blank">Terms and conditions</a></li>
